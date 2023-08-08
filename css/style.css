@@ -1,0 +1,20 @@
+@font-face{
+    font-family: 'Kollektif';
+    src: url('/css/fonts/Kollektif.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Kollektif';
+    src: url('/css/fonts/Kollektif-Bold.ttf');
+    font-weight: bold;
+    font-style: bold;
+}
+
+body{
+    font-family: 'Kollektif' !important;
+    font-size: 22px;
+    color: #333;
+    background-color: #f5f5f5;
+}
