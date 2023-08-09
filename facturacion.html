@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +9,21 @@
 </head>
 <body>
     <main class="container-father">
-        <div class="profe-img">
-            <img src="./imagenes/Imagen 3.png" alt="">
-        </div>
         <nav class="nav-father">
             <a href="">Menú Principal</a>
-            <img src="./imagenes/logo.png" alt="foto-logo">
+            <img src="./img/logo.png" alt="foto-logo">
             <a href="">Repair Express ID</a>
         </nav>
 
+        <div class="profe-img">
+            <img src="./img/Imagen 3.png" alt="">
+        </div>
+
         <div class="pay-father">
-            <img src="./imagenes/Trazado 86.png" alt="">
+            <img src="./img/Trazado 86.png" alt="">
             <h2 class="pay-title">Pagar</h2>
-            <p class="pay-p">Llena tus datos de facturación. Si ya los tienes registrados en tu Repair Express ID
+            <p class="pay-p">
+                Llena tus datos de facturación. Si ya los tienes registrados en tu Repair Express ID
                 el sistema los ingresará automáticamente.
             </p>
         </div>
@@ -33,47 +35,57 @@
                     Si lo tienes registrados en tu Repair Express ID
                     el sistema los llenará automáticamente
                 </p>
-                <form action="">
+                <form action="" class="form-contacto-facturacion">
                     <div class="names-container">
                         <div>
-                            <label for="">Primer Nombre</label>
-                            <input type="text">
+                            <label for="" class="label-general">Primer Nombre</label>
+                            <input type="text" class="inputs-general">
                         </div>
                         <div>
-                            <label for="">Segundo Nombre</label>
-                            <input type="text">
+                            <label for="" class="label-general">Segundo Nombre</label>
+                            <input type="text" class="inputs-general">
                         </div>
                     </div>
                     <div class="otros-container">
                         <div class="area-cont">
-                            <label for="">Código de Área</label>
-                            <input type="text" class="area">
+                            <label for="" class="label-general">Código de Área</label>
+                            <input type="text" class="area inputs-general">
                         </div>
                         <div class="num-cont">
-                            <label for="">Número de Contacto</label>
-                            <input type="text"  class="numero">
+                            <label for="" class="label-general">Número de Contacto</label>
+                            <input type="text"  class="numero inputs-general">
                         </div>
                     </div>
                     
-                    <label for="">Correo Electrónico</label>
-                    <input type="text">
+                    <div class="correo-contacto-container">
+                        <label for="" class="label-general">Correo Electrónico</label>
+                        <input type="text" class="inputs-general">
+                    </div>
                 </form>
             </div>
     
             <div class="metodo-pago-father">
                 <h3 class="metodo-title">Métodos de pago disponible</h3>
                 <div class="icons-container">
-                    <div class="visa-container"><img src="./imagenes/Icon metro-visa.png" alt=""></div>
-                    <img src="./imagenes/Icon metro-mastercard.png" alt="">
-                    <img src="./imagenes/Icon payment-american-express.png" alt="">
+                    <div class="visa-container w3-blue"><img src="./img/Icon metro-visa.png" alt="" class="visa-icon"></div>
+                    <img src="./img/Icon metro-mastercard.png" alt="" class="mastercard-icon">
+                    <img src="./img/Icon payment-american-express.png" alt="" class="american-icon">
                 </div>
-                <form action="">
-                    <label for="">Número de Tarjeta</label>
-                    <input type="text">
-                    <label for="">CVV</label>
-                    <input type="text">
-                    <label for="">Fecha de Expiracón</label>
-                    <input type="date" name="" id="" >
+                <form action="" class="form-metodo-pago">
+                    <div class="numb-tarjeta-container">
+                        <label for="" class="label-general">Número de Tarjeta</label>
+                        <input type="text" class="inputs-general">
+                    </div>
+                    <div class="cvv-fecha-exp">
+                        <div class="cvv">
+                            <label for="" class="label-general">CVV</label>
+                            <input type="text" class="inputs-general cvv-input">
+                        </div>
+                        <div class="fecha-expira">
+                            <label for="" class="label-general">Fecha de Expiración</label>
+                            <div class="inputs-general calendar-cont"><img src="./img/Icon awesome-calendar-alt.png" alt=""></div>                            
+                        </div>
+                    </div>
                 </form>
             </div>
 
