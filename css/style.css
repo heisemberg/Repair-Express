@@ -11,24 +11,3 @@
     font-weight: bold;
     font-style: bold;
 }
-
-body{
-    font-family: 'Kollektif' !important;
-    font-size: 22px;
-    color: #333;
-    background-color: #fff;
-}
-
-.big-margin{
-    max-width:70%;
-    margin: 0 auto;
-}
-
-.precio{
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.dispositivo{
-    font-weight: bold;
-}
