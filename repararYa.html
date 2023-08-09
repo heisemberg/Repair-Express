@@ -7,48 +7,89 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav class="contenedorNav">
-            <ul>
-                <li>
-                    <a href="#">Menu Principal</a>
-                </li>
-                <li>
-                    <img src="img/logo.png" alt="">
-                </li>
-                <li>
-                    <a href="#">Repair Express ID</a>
-                </li>
-                <li>
-                    <img src="img/Imagen 3.png" alt="">
-                </li>
-            </ul>
-        </nav>
-    </header>
     <main class="contenedorMain">
+        <header>
+            <nav class="contenedorNav">
+                <ul class="oneUl">
+                    <li>
+                        <a href="#">Menú Principal</a>
+                    </li>
+                    <li>
+                        <img src="img/logo.png" width="200px" alt="">
+                    </li>
+                    <li>
+                        <a href="#">Repair Express ID</a>
+                    </li>
+                </ul>
+                <ul class="twoUl">
+                    <li>
+                        <img src="img/Imagen 3.png"  alt="">
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <section>
             <div class="contenedorPrincipal">
-                <img src="img/Icon awesome-calendar-check.png" alt="">
-                <h3>Reservar</h3>
+                <img src="img/Icon awesome-calendar-check.png" width="50px" alt="">
+                <h2>Reservar</h2>
                 <p>Por favor llena los datos siguientes</p>
             </div>
         </section>
         <section>
-            <div class="contenedorSecundario">
-                <h3>¿Qué dispositivo tienes?</h3>
-                <div class="selectImg">
-                    <img src="img/icons8-flecha-left.png" alt="">
-                    <img src="img/refurb-macbook-air-gold-202002.png" alt="">
-                    <img src="img/510px-IPhone_X_vector.svg.png" alt="">
-                    <img src="img/520px-IPad_2017_tablet.png" alt="">
-                    <img src="img/icons8-flecha-rigth.png" alt="">
+            <div class="contenedorGeneralSecundario">
+                <div class="contenedorSecundario">
+                    <h2>¿Qué dispositivo tienes?</h2>
+                    <div class="selectImg">
+                        <img src="img/icons8-flecha-left.png" alt="">
+                        <div class="imgSer">
+                            <img src="img/refurb-macbook-air-gold-202002.png" width="100px"  alt="">
+                            <p>Mac</p>
+                        </div>
+                        <div class="imgSer">
+                            <img src="img/510px-IPhone_X_vector.png" width="100px" alt="">
+                            <P>Iphone</P>
+                        </div>
+                        <div class="imgSer">
+                            <img src="img/520px-IPad_2017_tablet.png" width="100px" alt="">
+                            <P>Ipad</P>
+                        </div>
+                        <img src="img/icons8-flecha-rigth.png" alt="">
+                    </div>
+                    <form class="formulario" action="">
+                        <label for="">¿Que modelo tienes?</label>
+                        <input type="text" placeholder="Iphone x">                      
+                        <label for="">¿Ingresa el número de serial?</label>
+                        <input type="text" placeholder="FFF2323UDF">
+                    </form>
                 </div>
-                <form action="">
-                    <label for="">¿Que modelo tienes?</label>
-                    <input type="text" placeholder="Iphone x">
-                    <label for="">¿Ingresa el número de serial?</label>
-                    <input type="text" placeholder="FFF2323UDF">
-                </form>
+                <div class="contenedorSecundario">
+                    <h2>¿Qué Servicio Deseas?</h2>
+                    <div class="selectImg">
+                        <img src="img/icons8-flecha-left.png" alt="">
+                        <div class="imgSer">
+                            <img src="img/Icon ionic-md-battery-full.png" width="100px" alt="">
+                            <p>Bateria</p>
+                        </div>
+                        <div class="imgSer">
+                            <img src="img/Icon ionic-ios-phone-portrait.png" width="100px" alt="">
+                            <p>Pantalla</p>
+                        </div>
+                        <div class="imgSer">
+                            <img src="img/Icon simple-ifixit.png" width="100px" alt="">
+                            <p>Software</p>
+                        </div>
+                        <img src="img/icons8-flecha-rigth.png" alt="">
+                    </div>
+                    <form class="formulario" action="">
+                        <label for="">Direccion</label>
+                        <input type="text" >
+                        <label for="">Fecha de reparacion</label>
+                        <input type="date" >
+                    </form>
+                </div>
+                <div >
+                    <button class="btn">Continuar</button>
+                </div>
             </div>
         </section>
     </main>
