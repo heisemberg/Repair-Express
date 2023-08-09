@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 @font-face{
     font-family: 'Kollektif';
     src: url('/css/fonts/Kollektif.ttf');
@@ -19,6 +25,7 @@ body{
     background-color: #fff;
 }
 
+
 .big-margin{
     max-width:70%;
     margin: 0 auto;
@@ -32,3 +39,4 @@ body{
 .dispositivo{
     font-weight: bold;
 }
+
