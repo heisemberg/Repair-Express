@@ -31,6 +31,79 @@ body{
     margin: 0 auto;
 }
 
+
+/* CONTAINER CONTACTO */
+
+.button-container{
+    grid-row: 3;
+    grid-column: 2;
+    display: flex;
+}
+
+.contacto-father{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    
+}
+
+.contacto-title{
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.contacto-p{
+    width: 80%;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input{
+    height: 50px;
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid;
+    padding-left: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+}
+
+.names-container, .otros-container{
+    display: flex;
+}
+
+.names-container label, .otros-container label{
+    font-size: 13px;
+    width: 80%;
+    margin-left: 15px;
+}
+
+.otros-container{
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.area-cont{
+    width: 35%;
+}
+.area{
+    width: 100%;
+}
+.num-cont{
+    width: 65%;
+}
+.numero{
+    width: 90%;
+
 .precio{
     font-size: 30px;
     font-weight: bold;
