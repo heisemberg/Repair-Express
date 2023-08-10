@@ -11,12 +11,6 @@
     font-style: bold;
 }
 
-@font-face {
-    font-family: 'Myriad-Pro';
-    src: url();
-}
-
-
 .container-father{
     height: 100vh;
     display: grid;
@@ -24,7 +18,7 @@
     grid-template-rows: 120px 200px 1fr;
 }
 
-/* NAV BAR CONTAINER */
+/* ----- NAVBAR SANTIAGO ----- */
 
 .header-container{
     grid-column: 1 /span 3;
@@ -40,7 +34,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.51);
     width: 76%;
     margin: 10px;
 }
@@ -58,7 +52,18 @@
     text-decoration: none;
 }
 
+.opt-menu{
+    font-size: 15px;
+    font-weight: 600;
 
+}
+
+.opt-repair{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* ----- NAVBAR RESERVA SANTIAGO ----- */
 
 /* .nav-father{
     border-bottom: 1px solid;
@@ -101,8 +106,10 @@
     width: 90px;
 } */
 
+/* ----- FIN DE NAVBAR RESERVA ---- */
 
-/* CONTAINER PAGAR */
+
+/* ----- CONTEINER PAGAR SANTIAGO ----- */
 
 .pay-father{
     grid-row: 2;
@@ -131,7 +138,7 @@
 }
 
 
-/* CONTAINER CONTACTO */
+/* ----- CONTEINER BAJO SANTIAGO ----- */
 
 .button-container{
     grid-row: 3;
@@ -227,7 +234,7 @@
     width: 50%;
 }
 
-/* ----- METODO DE PAGO ----- */
+/* ----- METODO DE PAGO SANTIAGO ----- */
 
 .metodo-pago-father{
     text-align: center;
@@ -237,6 +244,11 @@
     justify-content: start;
     width: 25%;
     height: 80%;
+}
+
+.metodo-title{
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .icons-container{
@@ -317,7 +329,7 @@
 }
 
 
-/* INFORMACION ORDEN */
+/* ----- INFORMACION ORDEN SANTIAGO ----- */
 
 .linea-ord{
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
@@ -410,6 +422,50 @@
 
 /* MEDIA QUERRIES SANTIAGO */
 
+@media (max-width:1440px) {
+    .button-container{
+        align-items: start;
+    }
+
+    .main-ord{
+        width: 90%;
+    }
+    
+    .negrita{
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .cvv-fecha-exp{
+        align-items: center;
+    }
+}
+
+@media (max-width:1025px) {
+    .label-general{
+        font-size: 12px;
+    }
+
+    .fecha-expira{
+        width: 60%;
+    }
+    .cvv{
+        width: 40%;
+    }
+    .cvv input{
+        width: 95%;
+    }
+
+    .orden-father{
+        width: 30%;
+    }
+    .contacto-father{
+        width: 35%;
+    }
+    .metodo-pago-father{
+        width: 30%;
+    }
+}
 
 @media (max-width:768px) {
 
@@ -417,7 +473,6 @@
         grid-template-columns: 1fr;
         grid-template-rows: 13% 15% 1fr;
         height: auto;
-        border: 1px solid;
     }
 
     /* NAV RESPONSIVE */
@@ -470,6 +525,7 @@
 
     .button-container{
         flex-direction: column;
+        align-items:center ;
     }
 
     .contacto-father{
@@ -481,11 +537,24 @@
     }
 
     .orden-father{
-        margin-top: 20px;
+        margin:20px 0;
         width: 100%;
         border-top: 2px solid rgba(0, 0, 0, 0.438);
     }
 
-    .main-ord{
+    .linea-ord{
+        width: 100%;
     }
+
+    .detail-price{
+        width: 100%;
+    }
+}
+
+@media (max-width:426px) {
+
+    .correo-contacto-container input{
+        width: 100%;
+    }
+    
 }
