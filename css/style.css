@@ -28,16 +28,31 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid;
+    border-bottom: 1px solid;
+    margin-top: 20px;
 }
 
 .nav-father img{
-    width: 120px;
+    width: 135px;
+}
+
+.nav-father a{
+    text-decoration: none;
 }
 
 .profe-img{
     grid-row: 1;
     grid-column: 3;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+
+.img-profe{
+    height: auto;
+    width: 90px;
 }
 
 
@@ -45,19 +60,39 @@
 
 .pay-father{
     grid-row: 2;
-    grid-column: 1 /span 3;
+    grid-column:2;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.img-pay{
+    height: auto;
+    width: 75px;
+    margin-bottom: 10px;
+}
+
+.pay-title{
+    margin: 0;
+}
+
+.pay-p{
+    width: 560px;
+    align-self: center;
+    font-size: 13px;
+    border: 1px solid;
+}
 
 
 /* CONTAINER CONTACTO */
 
 .button-container{
     grid-row: 3;
-    grid-column: 1 /span 2;
+    grid-column: 1 /span 3;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 10px;
     border: 1px solid red;
 }
@@ -88,16 +123,16 @@
 }
 
 .inputs-general{
-    height: 60px;
+    height: 50px;
     width: 100%;
     border-radius: 30px;
     border: 1px solid rgba(0, 0, 0, 0.486);
     padding-left: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .label-general{
-    font-size: 15px;
+    font-size: 11px;
     width: 80%;
     margin-left: 15px;
 }
@@ -166,9 +201,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50%;
+    width: 70%;
     border: 1px solid black;
     margin-bottom: 10px;
+    gap: 20px;
 }
 
 .mastercard-icon{
@@ -186,13 +222,14 @@
 }
 
 .visa-container{
-    width: 30%; 
-    height: 55px;
+    width: 80px; 
+    height: 50px;
     border-radius: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3px;
+    background-color: #0050F5;
 }
 
 .form-metodo-pago{
@@ -240,11 +277,87 @@
 }
 
 
-
-
 /* INFORMACION ORDEN */
+
+.linea-ord{
+    border-bottom: 1px solid;
+    width: 90%;
+}
+
+.main-ord{
+    border: 1px solid;
+    width: 80%;
+}
 
 .orden-father{
     width: 30%;
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.orden-title{
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.letra-pequeña{
+    font-size: 13px;
+}
+
+.negrita{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.iva-cont{
     border: 1px solid;
+}
+
+.iva-container{
+    height: 25px;
+}
+
+.linea-ord-diferente{
+    margin-top: 30px;
+}
+
+.detail-price{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.total-price{
+    font-weight: 600;
+}
+
+.footer-ord{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-ord p{
+    border: 1px solid;
+    font-size: 10px;
+    text-align: center;
+}
+
+.footer-ord div{
+    width: 200px;
+    height: 52px;
+    background-color:#0050F5 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.footer-ord a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
 }
