@@ -11,33 +11,79 @@
     font-style: bold;
 }
 
+@font-face {
+    font-family: 'Myriad-Pro';
+    src: url();
+}
+
 
 .container-father{
-    border: 4px solid black;
     height: 100vh;
     display: grid;
     grid-template-columns: 15% 70% 15% ;
-    grid-template-rows: 100px 200px 1fr;
+    grid-template-rows: 120px 200px 1fr;
 }
 
 /* NAV BAR CONTAINER */
 
-.nav-father{
+.header-container{
+    grid-column: 1 /span 3;
+}
+
+.contenedorNav{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.contenedorNav .oneUl{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+    width: 76%;
+    margin: 10px;
+}
+
+.contenedorNav .twoUl{
+    display: grid;
+    place-items: center;
+    width: 10%;
+    margin: 10px;
+    padding: 0;
+}
+
+.contenedorNav li,a{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+/* .nav-father{
+    border-bottom: 1px solid;
     grid-column: 2;
     grid-row: 1;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items:end;
     border-bottom: 1px solid;
-    margin-top: 20px;
 }
 
 .nav-father img{
     width: 135px;
 }
 
-.nav-father a{
+.nav-text{
     text-decoration: none;
+}
+
+.nav-opt-menu{
+    font-size: 20px;
+}
+
+.nav-opt-repair{
+    font-size: 25px;
 }
 
 .profe-img{
@@ -53,7 +99,7 @@
 .img-profe{
     height: auto;
     width: 90px;
-}
+} */
 
 
 /* CONTAINER PAGAR */
@@ -82,7 +128,6 @@
     width: 560px;
     align-self: center;
     font-size: 13px;
-    border: 1px solid;
 }
 
 
@@ -93,20 +138,18 @@
     grid-column: 1 /span 3;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
-    border: 1px solid red;
 }
 
 .contacto-father{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     padding: 5px;
-    width: 30%;
+    width: 25%;
     height: 80%;
-    border: 1px solid;
-
 }
 
 .contacto-title{
@@ -116,8 +159,8 @@
 }
 
 .contacto-p{
-    width: 80%;
-    font-size: 12px;
+    width: 340  px;
+    font-size: 13px;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -132,7 +175,7 @@
 }
 
 .label-general{
-    font-size: 11px;
+    font-size: 13px;
     width: 80%;
     margin-left: 15px;
 }
@@ -191,9 +234,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border: 1px solid;
-    width: 30%;
+    justify-content: start;
+    width: 25%;
     height: 80%;
 }
 
@@ -201,10 +243,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 70%;
-    border: 1px solid black;
+    width: 250px;
     margin-bottom: 10px;
-    gap: 20px;
+    gap: 10px;
 }
 
 .mastercard-icon{
@@ -233,13 +274,11 @@
 }
 
 .form-metodo-pago{
-    border: 1px solid;
-    width: 95%;
+    width: 85%;
 }
 
 .numb-tarjeta-container{
     text-align: left;    
-    border: 1px solid;
 }
 .cvv-fecha-exp{
     display: flex;
@@ -261,6 +300,7 @@
     width: 60%;
 }
 
+
 .fecha-expira{
     width: 50%;
 }
@@ -280,21 +320,21 @@
 /* INFORMACION ORDEN */
 
 .linea-ord{
-    border-bottom: 1px solid;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     width: 90%;
 }
 
 .main-ord{
-    border: 1px solid;
     width: 80%;
 }
 
 .orden-father{
-    width: 30%;
-    border: 1px solid green;
+    width: 25%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content:start;
 }
 
 .orden-title{
@@ -312,9 +352,6 @@
     align-items: center;
 }
 
-.iva-cont{
-    border: 1px solid;
-}
 
 .iva-container{
     height: 25px;
@@ -341,12 +378,12 @@
 }
 
 .footer-ord p{
-    border: 1px solid;
+    width: 90%;
     font-size: 10px;
     text-align: center;
 }
 
-.footer-ord div{
+.footer-button{
     width: 200px;
     height: 52px;
     background-color:#0050F5 ;
@@ -360,4 +397,95 @@
     color: white;
     text-decoration: none;
     font-size: 20px;
+}
+
+.footer-button:hover{
+    background-color: transparent;
+    border: 1.5px solid #0050F5;
+}
+
+.footer-button:hover a{
+    color: #0050F5;
+}
+
+/* MEDIA QUERRIES SANTIAGO */
+
+
+@media (max-width:768px) {
+
+    .container-father{
+        grid-template-columns: 1fr;
+        grid-template-rows: 13% 15% 1fr;
+        height: auto;
+        border: 1px solid;
+    }
+
+    /* NAV RESPONSIVE */
+    .contenedorNav{
+        display: flex;
+        justify-content: center;
+    }
+
+    .oneUl{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 10px;
+        padding-bottom: 5px;
+    }
+
+    .contenedorNav .twoUl{
+        display: none;
+        width: 0%;
+    }
+
+    .oneUl li img{
+        order: 1;
+    }
+
+    .oneUl li:first-child{
+        order: 2;
+    }
+
+    .oneUl li:last-child{
+        order: 3;
+    }
+
+    .twoUl li{
+        display: none;
+    }
+
+    /* PAGAR RESPONSIVE */
+
+    .pay-father{
+        grid-column: 1;
+    }
+
+    .pay-p{
+        width: 80%;
+    }
+
+
+    /* BUTTON CONTAINER */
+
+    .button-container{
+        flex-direction: column;
+    }
+
+    .contacto-father{
+        width: 90%;
+    }
+
+    .metodo-pago-father{
+        width: 100%;
+    }
+
+    .orden-father{
+        margin-top: 20px;
+        width: 100%;
+        border-top: 2px solid rgba(0, 0, 0, 0.438);
+    }
+
+    .main-ord{
+    }
 }
