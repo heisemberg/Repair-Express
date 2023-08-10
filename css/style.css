@@ -19,23 +19,6 @@ body{
     background-color: #fff;
 }
 
-button{
-    background-color: #0050F5;
-    color: #fff;
-    margin: 25px 15px 25px 15px !important;
-    font-size: 25px !important;
-    padding: 13px 30px 15px 30px;
-    border: 2px solid #fff;
-    border-radius: 35px;
-    font-weight: lighter;
-}
-
-button:hover{
-    background-color: #fff;
-    color: #0050F5;
-    border: 2px solid #0050F5;
-}
-
 .big-margin{
     max-width:70%;
     margin: 0 auto;
@@ -184,7 +167,7 @@ button:hover{
     }
     
     p{
-        font-size: 15px !important;
+        font-size: 18px !important;
     }   
 
     .container-proc{
@@ -248,13 +231,13 @@ button:hover{
 }
 
 .texto-amarillo{
-    color: yellow;
+    color: rgba(199, 176, 2, 0.6);
 }
 .texto-azul{
-    color: blue;
+    color: rgba(0, 0, 182, 0.6);
 }
 .texto-rojo{
-    color: red;
+    color: rgba(162, 3, 3, 0.6);
 }
 
 .container-footer{
@@ -277,3 +260,73 @@ button:hover{
     text-decoration: none;
     font-weight: lighter;
 }
+
+.container-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-2button{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px
+}
+
+.sub-container-button1{
+    display:flex;
+    grid-column: 1;
+    justify-content: end;
+    align-items: center;
+}
+
+.sub-container-button2{
+    display:flex;
+    grid-column: 2;
+    justify-content: start;
+    align-items: center;
+}
+
+.style-button{
+    display: inline-block;
+    padding: 15px 30px;
+    margin:20px;
+    background-color: #0050F5;
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.style-button:hover{
+    background-color: #fff;
+    color: #0050F5;
+    border: 2px solid #0050F5;
+}
+
+.container-garantia{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px
+}
+
+.sub-container-garantia1{
+    display:flex;
+    grid-column: 1;
+    justify-content: end;
+    align-items: center;
+}
+
+.sub-container-garantia2{
+    display:flex;
+    grid-column: 2;
+    justify-content: start;
+    align-items: center;
+}
+
+.terminos{
+    font-size: 12px !important;
+    font-weight: lighter !important;
+} 
