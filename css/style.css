@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face{
     font-family: 'Kollektif';
     src: url('/css/fonts/Kollektif.ttf');
@@ -11,11 +17,11 @@
     font-style: bold;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+body{
+    font-family: 'Kollektif' !important;
+    font-size: 22px;
+    color: #000;
+    background-color: #fff;
 
 .container-father{
     height: 100vh;
