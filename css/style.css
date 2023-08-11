@@ -11,11 +11,18 @@
     font-style: bold;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .container-father{
     height: 100vh;
     display: grid;
     grid-template-columns: 15% 70% 15% ;
     grid-template-rows: 120px 200px 1fr;
+    font-family: Verdana,sans-serif;
 }
 
 /* ----- NAVBAR SANTIAGO ----- */
@@ -47,6 +54,10 @@
     padding: 0;
 }
 
+.oneUl{
+    font-size: 15px;
+}
+
 .contenedorNav li,a{
     list-style: none;
     text-decoration: none;
@@ -55,12 +66,13 @@
 .opt-menu{
     font-size: 15px;
     font-weight: 600;
-
+    color: black;
 }
 
 .opt-repair{
     font-size: 17px;
     font-weight: 600;
+    color: black;
 }
 
 /* ----- NAVBAR RESERVA SANTIAGO ----- */
@@ -387,6 +399,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 15px;
 }
 
 .footer-ord p{
@@ -399,6 +412,7 @@
     width: 200px;
     height: 52px;
     background-color:#0050F5 ;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -414,10 +428,76 @@
 .footer-button:hover{
     background-color: transparent;
     border: 1.5px solid #0050F5;
+    color: #0050F5;
 }
 
 .footer-button:hover a{
     color: #0050F5;
+}
+
+
+
+/* ---- PAGINA CHECK SANTIAGO ---- */
+
+.container-father-2{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 15% 70% 15% ;
+    grid-template-rows: 120px 200px 1fr;
+    font-family: Verdana,sans-serif;
+}
+
+.info-container{
+    grid-column: 1 /span 3;
+    grid-row: 2 /span 3;
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.tools-container{
+    text-align: center;
+}
+
+.logo-tools{
+    height: auto;
+    width: 60px;
+}
+
+.tools-container h3{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.fa-circle-check{
+    font-size: 150px;
+    color: #88C14A;
+    margin-bottom: 20px;
+}
+
+.check-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 9%;
+}
+
+.check-container h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 1rem
+}
+
+.check-container p{
+    width: 590px;
+    text-align: center;
+}
+
+.opcion-2{
+    margin-top: 35px;
 }
 
 /* MEDIA QUERRIES SANTIAGO */
@@ -465,6 +545,10 @@
     .metodo-pago-father{
         width: 30%;
     }
+
+    .info-container{
+        justify-content: space-around;
+    }
 }
 
 @media (max-width:768px) {
@@ -474,6 +558,7 @@
         grid-template-rows: 13% 15% 1fr;
         height: auto;
     }
+
 
     /* NAV RESPONSIVE */
     .contenedorNav{
@@ -549,12 +634,47 @@
     .detail-price{
         width: 100%;
     }
+
+    /* PAGINA CHECK */
+
+        
+    .container-father-2{
+        grid-template-columns: 1fr;
+        grid-template-rows: 13% 15%  1fr;
+        height: auto;
+    }
+
+    .info-container{
+        grid-row: 3;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .check-container{
+        margin-bottom: 0px;
+    }
+
+    .tools-container{
+        margin-bottom: 50px;
+    }
+
+    .check-container h3{
+        margin-bottom: 25px;
+    }
+
+    .check-container p{
+        margin-bottom: 25px;
+    }
 }
 
 @media (max-width:426px) {
 
     .correo-contacto-container input{
         width: 100%;
+    }
+
+    .check-container p{
+        width: 70%;
     }
     
 }
