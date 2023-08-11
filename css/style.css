@@ -330,3 +330,57 @@ body{
     font-size: 12px !important;
     font-weight: lighter !important;
 } 
+
+.style-button2{
+    background-color:#F50000 !important;
+    font-size: 10px !important;
+    padding: 8px 18px !important;
+}
+.style-button2:hover{
+    background-color:#ffffff !important;
+    color: #F50000 !important;
+    border-color: #F50000 !important;
+    font-size: 10px !important;
+    padding: 8px 18px !important;
+}
+
+.container-contact{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 100px 20px 100px;
+    padding: 25px 0 25px 0;
+}
+.sub-container-contact{
+    flex: 1;
+    padding: 15px;
+}
+
+.sub-container-contact2{
+    flex: 1;
+    padding: 15px;
+}
+
+.title-contact{
+    font-size: 35px !important;
+}
+
+.container-mini-contact{
+    display: block;
+}
+
+.sub-container-mini-contact{
+    display: inline-block;
+}
+
+.container-mini-contact2{
+    display: block;
+    align-items: center;
+}
+
+.sub-container-mini-contact2{
+    display: block;
+}
+
+.align-left{
+    text-align: left;
+}
