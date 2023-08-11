@@ -180,7 +180,6 @@ a{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid red;
     padding: 10px;
     margin: 10px;
 }
@@ -190,7 +189,6 @@ a{
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    border: 1px solid black;
     padding: 10px;
 }
 
@@ -202,7 +200,6 @@ a{
     display: flex;
     place-items: center;
     gap: 10px;
-    border: 1px solid red;
 }
 
 .imgSer{
@@ -341,6 +338,10 @@ a{
     gap: 10px;
 }
 
+.content-modal > p{
+    font-size: 25px;
+}
+
 .iconRedes img{
     width: 30px;
     height: 30px;
@@ -397,18 +398,52 @@ a{
     width: 650px;
     padding: 20px;
     border: 1px solid #707070;
-    background: #ff0f0f 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 59px;
     opacity: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5px;
+}
+
+.contentTwo > p{
+    font-size: 25px;
+}
+
+.btnTwo{
+    width: 100%;
+    margin: 15px 15px 0px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+.contentTwo .btnTwo label{
+    cursor: pointer;
+    transition: all 300ms ease;
 }
 /*:::Fin Ventana Modal:::*/
 
+@media (max-width:660px){
+    .content-modal{
+        width: 450px;
+    }
+
+    .content-modal > p{
+        font-size: 22px;
+    }
+
+    .contentTwo{
+        width: 450px;
+    }
+
+    .contentTwo > p{
+        text-align: center;
+        font-size: 22px;
+    }
+}
+
 /* Responsive nav */
 @media (max-width:768px) {
-
     .contenedorNav{
         display: flex;
         justify-content: center;
